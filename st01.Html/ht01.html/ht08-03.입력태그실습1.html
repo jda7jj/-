@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>Title</title>
+        <style>
+            label {
+                width: 100px;
+                display: inline-block;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <style>
-        label {
-            width: 100px;
-            display: inline-block;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- fieldset & legend -->
-    <!-- form 태그 필수 속성 추가. -->
-    <form>
-    </form>
-
-</body>
-
+        </style>
+    </head>
+    <body>
+        <!-- fieldset & legend -->
+        <!-- form 태그 필수 속성 추가. -->
+        <form action="" method="get">
+            <fieldset>
+                <legend>입력양식</legend>
+                <div><label for="a">이름: </label><input type="text"name="" id="a"></div>
+                <div><label>이메일: </label><input type="text"name="" id="b"></div>
+                <input type="submit" value="쿼리 전송">
+            </fieldset>
+        </form>
+    </body>
 </html>

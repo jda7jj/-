@@ -1,47 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
-    <style type="text/css">
-        li {
-            list-style-type: none;
-        }
-        label {
-            width: 120px;
-            display: inline-block;
-        }
-        div {
-            margin-left: 35px;
-        }
-    </style>
-</head>
-<body>
-    <!-- form 태그 필요 속성 3가지 추가. -->
-    <form action="" method="" enctype="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+        <title>Title</title>
+        <style type="text/css">
+            li {
+                list-style-type: none;
+            }
 
-        <!-- 로그인 -->
-        <fieldset>
-        </fieldset>
+            label {
+                width: 120px;
+                display: inline-block;
+            }
 
-        <!-- 회원가입 -->
-        <fieldset>
-        </fieldset>
+            div {
+                margin-left: 35px;
+            }
 
-        <!-- 수강신청 -->
-        <fieldset>
-        </fieldset>
+        </style>
+    </head>
+    <body>
+        <!-- form 태그 필요 속성 3가지 추가. -->
+        <form action=""
+            method=""
+            enctype="">
+            <!-- 로그인 -->
+            <fieldset>
+                <legend>로그인</legend>
+                <div><label>아이디: </label><input type="text"
+                        name=""
+                        id=""
+                        required></div>
+                <div><label>패스워드: </label><input type="password"
+                        name=""
+                        id=""
+                        required></div>
+            </fieldset>
+            <!-- 회원가입 -->
+            <fieldset>
+                <legend>회원가입</legend>
+                <div><label>아이디: </label><input type="text"
+                        name=""
+                        id=""></div>
+                <div><label>패스워드: </label><input type="password"
+                        name=""
+                        id="" placeholder></div>
+                <div><label>패스워드 확인: </label><input type="
+                        password"
+                        name=""
+                        id="" placeholder></div>
+                <div><label>이름</label><input type="text"
+                        name=""
+                        id=""
+                        placeholder="이름을 입력하세요"></div>
+                <div><label>이메일: </label><input type="email"
+                        name=""
+                        id=""></div>
+                <div><label>전화번호: </label><input type="tel"
+                        name=""
+                        id=""></div>
+                <div><label>생년월일: </label><input type="date"
+                        name=""
+                        id=""></div>
+            </fieldset>
+            <!-- 수강신청 -->
+            <fieldset>
+                <legend>수강 신청</legend>
+                <p>
+                <div><label>영어 초급: </label><input type="radio"
+                        name="a"
+                        id="" checked></div>
+                <div><label>영어 중급: </label><input type="radio"
+                        name="a"
+                        id=""></div>
+                <div><label>영어 고급: </label><input type="radio"
+                        name="a"
+                        id=""></div>
+                </p>
+                <p>
+                <div><label>영어 초급: </label><input type="checkbox"
+                        name=""
+                        id=""></div>
+                <div><label>영어 중급: </label><input type="checkbox"
+                        name=""
+                        id="" checked></div>
+                <div><label>영어 고급: </label><input type="checkbox"
+                        name=""
+                        id=""></div>
+                </p>
+            </fieldset>
+            <!-- selec박스 -->
+            <fieldset>
+<select name="" id="">
+<optgroup label="공과대학">
+        <option value="건축과">건축과
+            <option value="토목과">토목과</option>
+</optgroup>
+<optgroup label="자연과학대학">
+    <option value="수학과">건축과
+        <option value="생물학과">토목과</option>
+</optgroup>
 
-        <!-- selec박스 -->
-        <fieldset>
-        </fieldset>
-
-        <!-- 전송 버튼 : form 을 완료 -->
-        <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
-
-    </form>
-
-</body>
+</select>
+            </fieldset>
+            <!-- 전송 버튼 : form 을 완료 -->
+            <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
+        </form>
+    </body>
 </html>
