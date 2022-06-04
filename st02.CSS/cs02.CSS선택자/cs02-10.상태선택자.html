@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>상태선택자</title>
-</head>
+    <style>
+      * {padding: 0 0 0 0; margin: 0 0 0 0;}
+      	li {list-style-type: none; display: inline-block; background-color: brown; width: 50px; height: 70px;}
+li:nth-child(odd) {background-color: rgb(92, 7, 7);}
+li:nth-child(even) {background-color: rgb(238, 134, 134);}
+li {float: left;}
+#one {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+#two {border-top-right-radius: 10px; border-bottom-right-radius: 10px;}
+li {line-height: 4;}
+    </style>
+  </head>
 
-<body>
+  <body>
     <pre>
 		태그에 class 속성과 id 속성만을 사용하여 그림처럼 style을 설정하시오.
-    
+
 		태그 설정
 		    1. 첫번째 li 태그에 id="first" 설정
 		    2. 마지막 li 태그에 id="last" 설정
 		    3. 홀수 li 태그에 class="odd" 설정
 		    4. 짝수 li 태그에 class="even" 설정
-	
+
 	    블락 태그를 인라인으로 바꾸는 방법
 	        1. float를 이용하는 방법
 	        2. display 를 이용하는 방법
-        
-        
-	    브라우저 스타일 초기화 방법 
+
+
+	    브라우저 스타일 초기화 방법
 		해야할 일
-		    0. li 기호 없애기 
+		    0. li 기호 없애기
 		    1. li 수평으로 출력되게
 		    2. li에 배경색 넣기
 		    3. width 설정
@@ -34,18 +43,18 @@
 		    6. li 중에서 짝수 찾고 설정
 		    7. 첫번째 li 태그를 찾고 라운드 처리
 		    8. 마지막 li 태그를 찾고 라운드 처리
-	</pre>
+	</pre
+    >
 
-    <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+    <ul >
+      <li id="one">1번째</li>
+      <li>2번째</li>
+      <li>3번째</li>
+      <li>4번째</li>
+      <li>5번째</li>
+      <li>6번째</li>
+      <li>7번째</li>
+      <li id="two">8번째</li>
     </ul>
-</body>
-
+  </body>
 </html>

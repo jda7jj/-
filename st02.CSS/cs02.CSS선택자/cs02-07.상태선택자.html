@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>상태선택자</title>
-</head>
+    <style>
+        * {padding: 0 0 0 0; margin: 0 0 0 0;}
+      li {
+        list-style-type: none;
+        display: inline-block;
+        background-color: red;
+        width: 80px;
+        height: 40px;
+        margin-left: -6px;
+      }
+      .odd {
+        background-color: blue;
+      }
+      li:nth-child(odd) {
+        background-color: aqua;
+      }
+      #first {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-left: 0px;
+      }
+      #last {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <pre>
         상태 선택자를 사용하여 그림처럼 style을 설정하시오.
 
@@ -25,22 +50,22 @@
 		    2. li에 배경색 넣기
 		    3. width 설정
 		    4. height 설정
-		    5. li 중에서 홀수 찾고 설정
+		    5. 클래스 선택자를 사용하여 li 중에서 홀수 찾고 설정
 		    6. li 중에서 짝수 찾고 설정
 		    7. 첫번째 li 태그를 찾고 라운드 처리
 		    8. 마지막 li 태그를 찾고 라운드 처리
-	</pre>
+	</pre
+    >
 
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+      <li id="first" class="odd">1번째</li>
+      <li>2번째</li>
+      <li class="odd">3번째</li>
+      <li>4번째</li>
+      <li class="odd">5번째</li>
+      <li>6번째</li>
+      <li class="odd">7번째</li>
+      <li id="last">8번째</li>
     </ul>
-</body>
-
+  </body>
 </html>
