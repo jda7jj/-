@@ -1,34 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>display 속성</title>
-</head>
-<body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      #inlineblock {
+        background-color: blue;
+        margin: 10px;
+      }
+      #inlineblock > li {
+        display: inline-block;
+      }
+      #inline > img {
+        padding: 10px 0 0 0;
+      }
+      #inline {
+        border: 1px solid lightgrey;
+        padding: 10px;
+      }
+      #inlineblock > a {
+        display: inline-block;
+      }
+      #block {
+        border: 2px solid lightslategray;
+        border-radius: 10px;
+margin: 10px 0 10px 0;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
     <h2>display 속성</h2>
 
     <div id="inlineblock">
-        <nav>
-            <ul>
-                <li><a href="#">애완견 종류</a></li>
-                <li><a href="#">입양하기</a></li>
-                <li><a href="#">건강돌보기</a></li>
-                <li><a href="#">더불어살기</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#">애완견 종류</a></li>
+          <li><a href="#">입양하기</a></li>
+          <li><a href="#">건강돌보기</a></li>
+          <li><a href="#">더불어살기</a></li>
+        </ul>
+      </nav>
     </div>
 
     <div id="inline">
-        <img src="../images/pic1.jpg">
-        <img src="../images/pic2.jpg">
-        <img src="../images/pic3.jpg">
+      <img src="../images/pic1.jpg" />
+      <img src="../images/pic2.jpg" />
+      <img src="../images/pic3.jpg" />
     </div>
     <div id="block">
-        <img src="../images/pic1.jpg">
-        <img src="../images/pic2.jpg">
-        <img src="../images/pic3.jpg">
+      <img src="../images/pic1.jpg" />
+      <img src="../images/pic2.jpg" />
+      <img src="../images/pic3.jpg" />
     </div>
-</body>
-</html>
+  </body>
+</html>
