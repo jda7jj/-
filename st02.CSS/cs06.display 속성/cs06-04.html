@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>display 속성</title>
     <style>
-        * {padding: 0; margin: 0; box-sizing: content-box;}
-        ul {display: flex; text-decoration: none;}
-    li:nth-child(even) {background-color: red}
-    li:nth-child(odd) {background-color: greenyellow;}
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      li {
+        list-style-type: none;
+        width: 100px;
+        height: 50px;
+        display: inline-block;
+        text-align: center;
+        line-height: 50px ;
+      }
+      ul {
+        display: inline-flex;
+      }/* 본인이 아니라 부모에서 벅용한다. flex-diwection: row 디폴트 값*/
+      li:nth-child(even) {
+        background-color: red;
+      }
+      li:nth-child(odd) {
+        background-color: greenyellow;
+      }
+      #first {
+        border-radius: 10px 0 0 10px;
+      }
+      #last {
+        border-radius: 0 10px 10px 0;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+      <li id="first">1번째</li>
+      <li>2번째</li>
+      <li>3번째</li>
+      <li>4번째</li>
+      <li>5번째</li>
+      <li>6번째</li>
+      <li>7번째</li>
+      <li id="last">8번째</li>
     </ul>
-</body>
+  </body>
 </html>

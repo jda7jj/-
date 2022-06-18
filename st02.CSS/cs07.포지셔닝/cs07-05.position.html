@@ -1,16 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>position</title>
-</head>
-<body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      div {
+        height: 50px;
+        margin: 0 10px 0 10px; width: 100%;
+      }
+      #pos1 {
+        background-color: aqua;
+      }
+      #pos2 {
+        background-color: chartreuse;
+      }
+      #pos3 {
+        background-color: blueviolet;
+      }
+      #pos2 {
+        position: relative;
+        left: 200px; /* X축 */
+        top: 200px; /* Y축 마이너스가 아니라 플러스를 쓴다*/
+      }
+      #pos3 {
+        position: absolute;
+        left: 10px; /* X축 */
+        top: 50px; /* Y축 */
+      }
+    </style>
+  </head>
+  <body>
     <div id="wrap">
-        <div id="pos1">첫번째</div>
-        <div id="pos2">두번째</div>
-        <div id="pos3">세번째</div>
+      <div id="pos1">첫번째</div>
+      <div id="pos2">두번째</div>
+      <div id="pos3">세번째</div>
     </div>
-</body>
-</html>
+  </body>
+</html>

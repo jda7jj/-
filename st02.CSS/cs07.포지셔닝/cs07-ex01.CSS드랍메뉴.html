@@ -1,73 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>자식>자식>자식></title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul,
+      li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      div {
+        margin: 100px 50px 0 100px;
+      }
+      #menu2 > li {
+        float: left;
+        position: relative;
+      }
+      #menu2::after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+      #menu2 > li > a {
+        display: block;
+        width: 150px;
+        height: 30px;
+        border: 1px solid gray;
+        text-align: center;
+        line-height: 30px;
+      }
+      #menu2 > li > a:hover {
+        background-color: #000000;
+        color: #ffff;
+      }
+      #menu2 > li > ul {
+        display: none;
+        position: absolute;
+      }
+      #menu2 > li:hover > ul {
+        display: block;
+      }
+      #menu2 > li > ul > li > a {
+        border: 1px solid gray;
+        display: block;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      #menu2 > li > ul > li > a:hover {background-color: lightgrey;color: #ffff;}
+      #menu2 > li.other {margin-left: -1px;}
+      #menu2 > li ul > li {margin-top: -1px;}
+      /* border 겹치는 부분을 해결 */
     </style>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
     <div>
-        <ul id="menu1">
-            <li><a href="#">MENU1</a>
-                <ul>
-                    <li><a href="#">MENU1-1</a></li>
-                    <li><a href="#">MENU1-2</a></li>
-                    <li><a href="#">MENU1-3</a></li>
-                </ul>
-            </li>
+      <ul id="menu1">
+        <li>
+          <a href="#">MENU1</a>
+          <ul>
+            <li><a href="#">MENU1-1</a></li>
+            <li><a href="#">MENU1-2</a></li>
+            <li><a href="#">MENU1-3</a></li>
+          </ul>
+        </li>
 
-            <li><a href="#">MENU2</a>
-                <ul>
-                    <li><a href="#">MENU2-1</a></li>
-                    <li><a href="#">MENU2-2</a></li>
-                    <li><a href="#">MENU2-3</a></li>
-                </ul>
-            </li>
-        </ul>
+        <li>
+          <a href="#">MENU2</a>
+          <ul>
+            <li><a href="#">MENU2-1</a></li>
+            <li><a href="#">MENU2-2</a></li>
+            <li><a href="#">MENU2-3</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
 
     <div>
-        <ul id="menu2">
-            <li><a href="#">MENU3</a>
-                <ul>
-                    <li><a href="#">MENU3-1</a></li>
-                    <li><a href="#">MENU3-2</a></li>
-                    <li><a href="#">MENU3-3</a></li>
-                </ul>
-            </li>
+      <ul id="menu2">
+        <li class="other">
+          <a href="#">MENU3</a>
+          <ul>
+            <li><a href="#">MENU3-1</a></li>
+            <li><a href="#">MENU3-2</a></li>
+            <li><a href="#">MENU3-3</a></li>
+          </ul>
+        </li>
 
-            <li><a href="#">MENU4</a>
-                <ul>
-                    <li><a href="#">MENU4-1</a></li>
-                    <li><a href="#">MENU4-2</a></li>
-                    <li><a href="#">MENU4-3</a></li>
-                </ul>
-            </li>
-        </ul> <!-- float 해제 -->
+        <li class="other">
+          <a href="#">MENU4</a>
+          <ul>
+            <li><a href="#">MENU4-1</a></li>
+            <li><a href="#">MENU4-2</a></li>
+            <li><a href="#">MENU4-3</a></li>
+          </ul>
+        </li>
+        <li class="other">
+            <a href="#" >MENU5</a>
+            <ul>
+              <li><a href="#">MENU4-1</a></li>
+              <li><a href="#">MENU4-2</a></li>
+              <li><a href="#">MENU4-3</a></li>
+            </ul>
+          </li>
+          <li class="other">
+            <a href="#" >MENU6</a>
+            <ul>
+              <li><a href="#">MENU4-1</a></li>
+              <li><a href="#">MENU4-2</a></li>
+              <li><a href="#">MENU4-3</a></li>
+            </ul>
+          </li>
+      </ul>
+      <!-- float 해제 -->
     </div>
 
     <div>
-        <ul id="menu3">
-            <li><a href="#">MENU5</a>
-                <ul>
-                    <li><a href="#">MENU5-1</a></li>
-                    <li><a href="#">MENU5-2</a></li>
-                    <li><a href="#">MENU5-3</a></li>
-                </ul>
-            </li>
+      <ul id="menu3">
+        <li>
+          <a href="#">MENU5</a>
+          <ul>
+            <li><a href="#">MENU5-1</a></li>
+            <li><a href="#">MENU5-2</a></li>
+            <li><a href="#">MENU5-3</a></li>
+          </ul>
+        </li>
 
-            <li><a href="#">MENU6</a>
-                <ul>
-                    <li><a href="#">MENU6-1</a></li>
-                    <li><a href="#">MENU6-2</a></li>
-                    <li><a href="#">MENU6-3</a></li>
-                </ul>
-            </li>
-        </ul>
+        <li>
+          <a href="#">MENU6</a>
+          <ul>
+            <li><a href="#">MENU6-1</a></li>
+            <li><a href="#">MENU6-2</a></li>
+            <li><a href="#">MENU6-3</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-</body>
+  </body>
 </html>
-

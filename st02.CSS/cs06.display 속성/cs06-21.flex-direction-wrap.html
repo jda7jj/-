@@ -1,41 +1,57 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>display: flex</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      div>div {
+        border: 1px solid black; background-color: gray;
+      }
+      #dir-row {display: flex;}
+      #dir-row>div {width: 33%;height: 300px;}
+      #dir-col{display: flex;flex-direction: column;}
+      #dir-col>div {width: 33%;height: 100px;}
+      #wrap-row{display: flex; flex-direction: row; flex-wrap: wrap;}
+      #wrap-row>div {width: 40%;height: 100px;}
+
+    </style>
+  </head>
+  <body>
     <div id="dir-row">
-        <div class="row1"><h2>1</h2></div>
-        <div class="row2"><h2>2</h2></div>
-        <div class="row3"><h2>3</h2></div>
+      <div class="row1"><h2>1</h2></div>
+      <div class="row2"><h2>2</h2></div>
+      <div class="row3"><h2>3</h2></div>
     </div>
 
-    <br >
+    <br />
 
     <div id="dir-col">
-        <div class="row1"><h2>1</h2></div>
-        <div class="row2"><h2>2</h2></div>
-        <div class="row3"><h2>3</h2></div>
+      <div class="row1"><h2>1</h2></div>
+      <div class="row2"><h2>2</h2></div>
+      <div class="row3"><h2>3</h2></div>
     </div>
 
-    <br >
+    <br />
 
     <div id="wrap-row">
-        <div class="row1"><h2>1</h2></div>
-        <div class="row2"><h2>2</h2></div>
-        <div class="row3"><h2>3</h2></div>
+      <div class="row1"><h2>1</h2></div>
+      <div class="row2"><h2>2</h2></div>
+      <div class="row3"><h2>3</h2></div>
     </div>
 
-    <br >
+    <br />
 
     <div id="wrap-col">
-        <div class="row1"><h2>1</h2></div>
-        <div class="row2"><h2>2</h2></div>
-        <div class="row3"><h2>3</h2></div>
+      <div class="row1"><h2>1</h2></div>
+      <div class="row2"><h2>2</h2></div>
+      <div class="row3"><h2>3</h2></div>
     </div>
-
-</body>
-</html>
+  </body>
+</html>

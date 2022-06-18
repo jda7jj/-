@@ -6,6 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Starbuzz Coffee</title>
+    <style>
+         * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      body {
+        background-color: #b5a789;
+        font-family: "맑은 고딕";
+      }
+      #header {
+        background-color: #675c47;
+        margin: 10px;
+      }
+      #drinks {
+        padding: 30px;
+        background-color: #efe5d0;
+        background-image: url(./images/background.gif);
+      background-position: top left;
+    margin:  0px 10px 10px 10px ;
+  padding: 15px;width: 360px;}
+      #main {
+        padding: 30px;
+        background-color: #efe5d0;
+        background-image: url(./images/background.gif);
+      background-position: top left;
+    margin:  0px 10px 10px 0 ;
+  padding: 15px;width: calc(100% - 640px);}
+      #main > h1 {
+        color: crimson;
+      }
+      #sidebar {background-color: #efe5d0; background-image: url(./images/background.gif)
+        ;background-position: bottom right; margin:  0px 10px 10px 0px ;
+  padding: 15px;width: 250px;}
+      #footer {
+background-color: #675c47;margin:  0px 10px 10px 10px ; color: #efe5d0; text-align: center; padding: 15px;
+      }
+      .slogan {
+        color: burlywood;
+      }
+      a:link {color: #b76666; text-decoration: none;}
+      a:visited {color: #675c47; text-decoration: none;}
+      #sidebar>p.beanheading {text-align: center;}
+#tableRow {display: flex;}
+#award {position: absolute;top: 15px;left: 600px;}
+#coupon {position: relative;left: -100px;}
+#headerSlogan {float: right;}
+#header::after {clear: both;display: block;content: '';}
+    </style>
 </head>
 
 <body>
@@ -29,13 +78,13 @@
                 <p>Mocha Cafe Latte, $2.35</p>
                 <p>Cappuccino, $1.89</p>
                 <p>Chai Tea, $1.85</p>
-                
+
                 <div id="coupon">
                     <a href="freecoffee.html" title="Click here to get your free coffee">
                         <img src="images/ticket.gif" alt="Starbuzz coupon ticket">
                     </a>
                 </div>
-				
+
                 <h1>ELIXIRS</h1>
                 <p>
                     We proudly serve elixirs brewed by our friends
