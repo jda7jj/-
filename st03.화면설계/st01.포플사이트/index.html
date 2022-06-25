@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/default.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      #wrap {
+        background-image: url(http://in-stone.co.kr/wp-content/uploads/2017/01/p004.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center;
+        height: auto;
+      }
+      h1 {
+        padding: 10px;
+        background-color: black;
+        color: white;
+        display: inline-block;
+      }
+
+      #nav {
+        display: flex;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 10px;
+        background-color: white;
+        height: 20px;
+        width: 100%;
+      }
+      #nav li {
+        padding: 0 30px 0 30px;
+      }
+      footer {
+        background-color: white;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 30px;
+        height: 200px;
+      }
+      #header {float: right; margin: 20px 20px 0 0;}
+      #home::after {
+        clear: both;
+        display: block;
+        content: "";
+      }
+
+      #contents {
+        background-position: center;
+        padding: 30px;
+        color: white;
+      }
+      #img {
+        width: 120px;
+      }
+      ul#home > li {display: inline-block; }
+      ul#home > li > a {
+        /* border: 2px solid black; */
+        background-color: white;
+        padding: 5px 10px 5px 10px;
+        margin: 5px;
+        display: inline-block;
+        width: 70px;
+        text-align: center;
+      }
+      header {padding: 10px;}
+      input {
+        margin: 3px 0 3px 40px;
+        padding: 0;
+        box-sizing: content-box;
+      }
+      .input-search {
+        border: 1px solid gray;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        height: 24px;
+        outline: 0px;
+      }
+      .input-search-submit {
+        border: 1px solid gray;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-left: -1px;
+        padding: 3px;
+        width: 40px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <img
+          id="img"
+          src="https://cdn.pixabay.com/photo/2016/10/27/10/34/arrow-1773939__340.png"
+        />
+        <h1>포폴사이트</h1>
+        <div id="header">
+          <ul id="home">
+            <li class="box"><a href="index.html">홈</a></li>
+            <li class="box"><a href="login.html">로그인</a></li>
+            <li class="box"><a href="register1.html">회원가입</a></li>
+            <input type="text" class="input-search" />
+            <input type="submit" class="input-search-submit" value="검색" />
+        </ul>
+        </div>
+      </header>
+      <nav>
+        <ul id="nav">
+          <li>ABOUT</li>
+          <li>GALLERY</li>
+          <li>OFFICE</li>
+          <li>SERVICE</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+      <div id="contents">
+        <p>안녕하세요. 하지수 사이트입니다</p>
+        <br />
+        <img
+          src="http://www.badastar.or.kr/static/user/images/main/s1_slide3.jpg"
+          alt=""
+        />
+      </div>
+      <footer>
+        <img src="./images/footer-home.png" alt="" /><img
+          src="./images/footer_google.png"
+          alt=""
+        /><img src="./images/footer-facebook.png" alt="" />
+      </footer>
+    </div>
+  </body>
+</html>

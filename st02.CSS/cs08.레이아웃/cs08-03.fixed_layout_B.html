@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>레이아웃 B</title>
+    <style>
+        html, body {height: 100%;width: 100%;}
+        #wrap {height: 100%;width: 100%;}
+        #sidebar {background-color: crimson; float: left;height: 100%;width: 50%;}
+        #right {display: inline-block;width: 50%; height: 100%;}
+        #header {background-color: chartreuse; height: 100px;}
+        #content {background-color: blueviolet;height: calc(100% - 200px);}
+        #footer {background-color: deeppink; height: 100px;}
+            </style>
 </head>
 
 <body>
@@ -14,19 +23,21 @@
         <div id="sidebar">
             sidebar
         </div>
+<div ID="right">
 
-        <div id="header">
-            header
-        </div>
+            <div id="header">
+                header
+            </div>
 
-        <div id="content">
-            content
-        </div>
+            <div id="content">
+                content
+            </div>
 
-        <div id="footer">
-            footer
-        </div>
+            <div id="footer">
+                footer
+            </div>
+</div>
     </div>
 </body>
 
-</html>
+</html>

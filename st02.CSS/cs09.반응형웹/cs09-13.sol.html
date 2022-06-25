@@ -1,21 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>연습문제</title>
-</head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: content-box;
+      }
+      #img-box {
+        display: flex; flex-direction: row;flex-wrap: wrap;
+      }
+      .box {
+        border: 1px solid black;
+        width: 23%;
+        height: 100px;
+        background-color: chocolate;
+        margin: 0.5%;
+      }
+      .box.img2 {
+        background-color: rgb(30, 48, 210);
+      }
+      .box.img3 {
+        background-color: rgb(210, 30, 210);
+      }
+      .box.img4 {
+        background-color: rgb(81, 210, 30);
+      }
 
-<body>
+      @media all and (min-width: 768px) and (max-width: 1024px)
+      {.box { width: 48%;}}
+
+      @media all and (min-width: 480px) and (max-width: 768px)
+      {.box {width: 100%;}}
+
+
+    </style>
+  </head>
+
+  <body>
     <div id="wrapper">
-        <h1> 반응형 웹 디자인 </h1>
-        <div id="img-box">
-            <div class="box img1"></div>
-            <div class="box img2"></div>
-            <div class="box img3"></div>
-            <div class="box img4"></div>
-        </div>
+      <h1>반응형 웹 디자인</h1>
+      <div id="img-box">
+        <div class="box img1"></div>
+        <div class="box img2"></div>
+        <div class="box img3"></div>
+        <div class="box img4"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
